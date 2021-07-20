@@ -68,6 +68,7 @@
             "category": [
                 "Access"
             ],
+            "created": "2021-02-23T06:58:18.944Z",
             "outcome": "Access Denied",
             "provider": "Custom Rule Engine",
             "type": "x-oca-event"
@@ -90,6 +91,7 @@
                 ],
                 "provider": "Custom Rule Engine",
                 "agent": "Custom Rule Engine-8 :: QRADARQCDL1",
+                "created": "2021-02-23T06:58:18.944Z",
                 "nt_ref": "4",
                 "host_ref": "5",
                 "original_ref": "10"
