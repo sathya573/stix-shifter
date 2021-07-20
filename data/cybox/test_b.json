@@ -74,6 +74,131 @@
             "type": "x-oca-event"
             }
         }
-      }
+      },
+      {
+        "id": "observed-data--8ed142db-2ec5-4c19-99a9-7f994e91ac44",
+        "type": "observed-data",
+        "created_by_ref": "identity--efc08d33-d6f4-40ce-9846-4215f65b7ad7",
+        "created": "2021-02-23T07:21:53.582Z",
+        "modified": "2021-02-23T07:21:53.582Z",
+        "objects": {
+            "0": {
+                "type": "x-oca-event",
+                "action": "MJL-User Behaviour-Feb3",
+                "outcome": "Access Denied",
+                "category": [
+                    "Access"
+                ],
+                "provider": "Custom Rule Engine",
+                "agent": "Custom Rule Engine-8 :: QRADARQCDL1",
+                "created": "2021-02-23T06:58:18.944Z",
+                "nt_ref": "4",
+                "host_ref": "5",
+                "original_ref": "10"
+            },
+            "1": {
+                "type": "x-qradar",
+                "qid": "68633790",
+                "category_id": 4015,
+                "high_level_category_id": 4000,
+                "log_source_id": 63,
+                "device_type": 18,
+                "direction": "R2R",
+                "credibility": 8,
+                "relevance": 9,
+                "cre_event_list": [
+                    "118391",
+                    "100104",
+                    "102339",
+                    "109239",
+                    "100227",
+                    "100221",
+                    "100272",
+                    "113960",
+                    "110939"
+                ],
+                "domain_id": 0,
+                "domain_name": "Default Domain"
+            },
+            "2": {
+                "type": "x-ibm-finding",
+                "start": "2021-02-23T06:58:18.944Z",
+                "end": "2021-02-23T06:58:18.944Z",
+                "src_ip_ref": "3",
+                "dst_ip_ref": "7",
+                "event_count": 1,
+                "finding_type": "event",
+                "magnitude": 9,
+                "severity": 9,
+                "src_geolocation": "NorthAmerica.UnitedStates",
+                "dst_geolocation": "NorthAmerica.UnitedStates",
+                "name": "MJL-User Behaviour-Feb3",
+                "rule_names": [
+                    "MJL-User Behaviour Analytic-Feb3",
+                    "BB:CategoryDefinition: Firewall or ACL Denies",
+                    "BB:UBA : Access Denies",
+                    "BB:UBA : Excluded Geographic Locations",
+                    "Source Asset Weight is Low",
+                    "Destination Asset Weight is Low",
+                    "Load Basic Building Blocks",
+                    "Access rule for Risk Manager - Critical threats",
+                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region"
+                ]
+            },
+            "3": {
+                "type": "ipv4-addr",
+                "value": "9.30.116.81",
+                "resolves_to_refs": [
+                    "6"
+                ]
+            },
+            "4": {
+                "type": "network-traffic",
+                "src_ref": "3",
+                "src_port": 0,
+                "dst_ref": "7",
+                "dst_port": 0,
+                "protocols": [
+                    "reserved"
+                ]
+            },
+            "5": {
+                "type": "x-oca-asset",
+                "ip_refs": [
+                    "3",
+                    "9"
+                ],
+                "mac_refs": [
+                    "6"
+                ]
+            },
+            "6": {
+                "type": "mac-addr",
+                "value": "00:00:00:00:00:00"
+            },
+            "7": {
+                "type": "ipv4-addr",
+                "value": "9.30.116.81",
+                "resolves_to_refs": [
+                    "8"
+                ]
+            },
+            "8": {
+                "type": "mac-addr",
+                "value": "00:00:00:00:00:00"
+            },
+            "9": {
+                "type": "ipv4-addr",
+                "value": "0.0.0.0"
+            },
+            "10": {
+                "type": "artifact",
+                "payload_bin": "TUpMLVVzZXIgQmVoYXZpb3VyLUZlYjMJTUpMLVVzZXIgQmVoYXZpb3VyLUZlYjM="
+            }
+        },
+        "first_observed": "2021-06-25T11:30:00.97Z",
+        "last_observed": "2021-06-24T11:30:00.97Z",
+        "number_observed": 1
+    }
     ]
   }

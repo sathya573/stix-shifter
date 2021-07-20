@@ -42,7 +42,7 @@ class Connector(BaseSyncConnector):
                 matching_sdos.extend(matches)
         else:
             matching_sdos = []
-
+        print(str(matching_sdos))
         return matching_sdos
 
     def ping_connection(self):
@@ -83,6 +83,7 @@ class Connector(BaseSyncConnector):
             try:
                 response_txt = response.read().decode('utf-8')
                 bundle = json.loads(response_txt)
+                # print(json.dumps(bundle, indent=4, sort_keys=True))
 
                 if "stix_validator" in self.connection['options'] and self.connection['options'].get("stix_validator") is True:
                     results = validate_instance(bundle)
