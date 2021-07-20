@@ -85,7 +85,15 @@
             "0": {
                 "type": "x-oca-event",
                 "action": "MJL-User Behaviour-Feb3",
-                "outcome": "Access Denied"
+                "outcome": "Access Denied",
+                "category": [
+                    "Access"
+                ],
+                "provider": "Custom Rule Engine",
+                "agent": "Custom Rule Engine-8 :: QRADARQCDL1",
+                "nt_ref": "4",
+                "host_ref": "5",
+                "original_ref": "10"
             },
             "2": {
                 "type": "x-ibm-finding",
