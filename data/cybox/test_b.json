@@ -82,44 +82,6 @@
         "created": "2021-02-23T07:21:53.582Z",
         "modified": "2021-02-23T07:21:53.582Z",
         "objects": {
-            "0": {
-                "type": "x-oca-event",
-                "action": "MJL-User Behaviour-Feb3",
-                "outcome": "Access Denied",
-                "category": [
-                    "Access"
-                ],
-                "provider": "Custom Rule Engine",
-                "agent": "Custom Rule Engine-8 :: QRADARQCDL1",
-                "created": "2021-02-23T06:58:18.944Z",
-                "nt_ref": "4",
-                "host_ref": "5",
-                "original_ref": "10"
-            },
-            "1": {
-                "type": "x-qradar",
-                "qid": "68633790",
-                "category_id": 4015,
-                "high_level_category_id": 4000,
-                "log_source_id": 63,
-                "device_type": 18,
-                "direction": "R2R",
-                "credibility": 8,
-                "relevance": 9,
-                "cre_event_list": [
-                    "118391",
-                    "100104",
-                    "102339",
-                    "109239",
-                    "100227",
-                    "100221",
-                    "100272",
-                    "113960",
-                    "110939"
-                ],
-                "domain_id": 0,
-                "domain_name": "Default Domain"
-            },
             "3": {
                 "type": "ipv4-addr",
                 "value": "9.30.116.81",
