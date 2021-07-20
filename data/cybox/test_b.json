@@ -82,6 +82,20 @@
         "created": "2021-02-23T07:21:53.582Z",
         "modified": "2021-02-23T07:21:53.582Z",
         "objects": {
+            "0": {
+                "type": "x-oca-event",
+                "action": "MJL-User Behaviour-Feb3",
+                "outcome": "Access Denied",
+                "category": [
+                    "Access"
+                ],
+                "provider": "Custom Rule Engine",
+                "agent": "Custom Rule Engine-8 :: QRADARQCDL1",
+                "created": "2021-02-23T06:58:18.944Z",
+                "nt_ref": "4",
+                "host_ref": "5",
+                "original_ref": "10"
+            },
             "2": {
                 "type": "x-ibm-finding",
                 "start": "2021-02-23T06:58:18.944Z",
