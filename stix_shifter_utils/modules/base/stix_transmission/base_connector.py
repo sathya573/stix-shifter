@@ -92,6 +92,6 @@ class BaseConnector:
         result = entry_point.create_results_connection(search_id, offset, length)
         if result.get('success'):
             data = result['data']
-            data = data[:length]
+            data = data[:int(length)]
             result = entry_point.translate_results(data_source, data)
         return result
