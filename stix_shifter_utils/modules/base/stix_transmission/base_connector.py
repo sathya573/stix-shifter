@@ -93,5 +93,5 @@ class BaseConnector:
         if result.get('success'):
             data = result['data']
             data = data[:length]
-            result = entry_point.translate_results(data_source, json.dumps(data))
+            result = entry_point.translate_results(data_source, data)
         return result

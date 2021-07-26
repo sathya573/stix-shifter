@@ -1,5 +1,4 @@
 from abc import ABCMeta, abstractmethod
-import json
 
 
 class BaseResultsConnector(object, metaclass=ABCMeta):
@@ -27,5 +26,5 @@ class BaseResultsConnector(object, metaclass=ABCMeta):
         if result.get('success'):
             data = result['data']
             data = data[:int(length)]
-            result = entry_point.translate_results(data_source, json.dumps(data))
+            result = entry_point.translate_results(data_source, data)
         return result
