@@ -14,11 +14,11 @@ class JSONToStix(BaseResultTranslator):
         :return: STIX formatted results
         :rtype: str
         """
-        try:
-            json_data = json.loads(data)
-            data_source = json.loads(data_source)
-        except Exception:
-            raise LoadJsonResultsException()
+        # try:
+        #     json_data = json.loads(data)
+        #     data_source = json.loads(data_source)
+        # except Exception:
+        #     raise LoadJsonResultsException()
 
         try:
             json_to_stix_translator = importlib.import_module('stix_shifter_modules.%s.stix_translation.json_to_stix_translator' % self.module_name)
@@ -27,7 +27,7 @@ class JSONToStix(BaseResultTranslator):
             json_to_stix_translator = importlib.import_module('stix_shifter_utils.stix_translation.src.json_to_stix.json_to_stix_translator')
 
         try:
-            results = json_to_stix_translator.convert_to_stix(data_source, self.map_data, json_data, self.transformers, self.options, self.callback)
+            results = json_to_stix_translator.convert_to_stix(data_source, self.map_data, data, self.transformers, self.options, self.callback)
         except Exception as ex:
             raise TranslationResultException("Error when converting results to STIX: {}".format(ex))
         
