@@ -82,7 +82,7 @@ class TestCarbonBlackTransformEventsResults(unittest.TestCase, object):
     def test_change_cb_process_api_timestamp_regex(self):
         results = event_data_1.copy()
         results[0]['event_timestamp'] = "2021-04-05T01:52:46.594000Z"
-        result_bundle = entry_point.translate_results(json.dumps(data_source), json.dumps(results))
+        result_bundle = entry_point.translate_results(data_source, results)
 
         assert(result_bundle['type'] == 'bundle')
 
@@ -97,7 +97,7 @@ class TestCarbonBlackTransformEventsResults(unittest.TestCase, object):
     def test_change_cb_process_api_results_to_stix(self):
 
         results = event_data_2.copy()
-        result_bundle = entry_point.translate_results(json.dumps(data_source), json.dumps(results))
+        result_bundle = entry_point.translate_results(data_source, results)
 
         assert(result_bundle['type'] == 'bundle')
 
@@ -144,7 +144,7 @@ class TestCarbonBlackTransformEventsResults(unittest.TestCase, object):
 
     def test_merge_results_mixed_to_stix(self):
         results = event_data_2.copy()
-        result_bundle = entry_point.translate_results(json.dumps(data_source), json.dumps(results))
+        result_bundle = entry_point.translate_results(data_source, results)
 
         assert(result_bundle['type'] == 'bundle')
 

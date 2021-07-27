@@ -21,12 +21,11 @@ class ResultTranslator(JSONToStix):
         """
         
         results = super().translate_results(data_source, data)
-        json_data = json.loads(data)
 
-        if len(results['objects']) - 1 == len(json_data):
+        if len(results['objects']) - 1 == len(data):
             for i in range(1, len(results['objects'])):
                 results['objects'][i]['number_observed'] = 1
         else:
-            raise RuntimeError("Incorrect number of result objects after translation. Found: {}, expected: {}.".format(len(results['objects']) - 1, len(json_data)))
+            raise RuntimeError("Incorrect number of result objects after translation. Found: {}, expected: {}.".format(len(results['objects']) - 1, len(data)))
 
         return results
