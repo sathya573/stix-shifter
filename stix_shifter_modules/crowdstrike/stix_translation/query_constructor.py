@@ -93,7 +93,6 @@ class CSQueryStringPatternTranslator:
             elif (expression.comparator == ComparisonComparators.In and
                     isinstance(expression.value, SetValue)):
                 value = list(map(self._escape_value, expression.value.element_iterator()))
-                print("Hi")
             else:
                 value = self._escape_value(expression.value)
 
