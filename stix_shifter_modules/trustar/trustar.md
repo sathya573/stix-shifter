@@ -15,7 +15,6 @@ python main.py translate trustar query '{}' "[x-trustar-report:searchTerm LIKE '
 
 will return
 # NOTE - if from/to is not provided, defaults to past 5 minutes
-```
 {
     "queries": [
         "{\"searchTerm\": \" \", \"from\": 1641281640000, \"to\": 1641285240000}"
